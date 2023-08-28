@@ -6,13 +6,33 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
   <title>Editor | Simple editor to create social media posts</title>
 </head>
-<body>
-  <h1>Social Editor</h1>
+<body class="app">
+  <header class="header">
+    <img class="header__logo" src="https://bytegrad.com/course-assets/css/1/logo.svg" alt="Logo">
+    <button class="header__btn">File</button>
+    <button class="header__btn">View</button>
+    <button class="header__btn">New</button>
+    <button class="header__btn">
+      <i class="fas fa-solid fa-crown "></i>
+    </button>
+    <button class="header__btn">
+      <i class="fas fa-bell"></i>
+    </button>
+    <button class="header__btn header__user">
+      <img
+        class="header__img" 
+        src="https://images.unsplash.com/photo-1614247484197-9c6164bb532f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=60&q=100" 
+        alt="User photo"
+      >
+      <span class="header__username">James O.</span>
+    </button>
+  </header>
+
 </body>
 </html>
