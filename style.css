@@ -148,6 +148,55 @@ button {
   background-color: #2B363B;
   padding: 0 30px;
 }
+.panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  margin-bottom: 20px;
+}
+.panel__title {
+  font-weight: 500;
+  color: #fff;
+}
+.panel__collapse {
+  color: rgba(255, 255, 255, .4);
+  cursor: pointer;
+  font-size: 13px;
+}
+.panel__images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.panel__img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .4s;
+}
+.panel__img:hover {
+  transform: scale(1.05);
+}
+.panel__button {
+  width: 160px;
+  height: 160px;
+  background-color: #343f45;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .4s;
+}
+.panel__button:hover, 
+.panel__button:focus {
+  background-color: #3d484d;
+}
+.panel__icon {
+  color: #161e21;
+  font-size: 25px;
+}
 
 .app__main {
   flex: 1;
