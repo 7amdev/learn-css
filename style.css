@@ -144,9 +144,9 @@ button {
 }
 
 .panel {
-  width: 390px;
+  width: 350px;
   background-color: #2B363B;
-  padding: 0 30px;
+  padding: 0 31px;
 }
 .panel__header {
   display: flex;
@@ -157,11 +157,11 @@ button {
   margin-bottom: 20px;
 }
 .panel__title {
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
 }
 .panel__collapse {
-  color: rgba(255, 255, 255, .4);
+  color: #6B7276;
   cursor: pointer;
   font-size: 13px;
 }
@@ -171,30 +171,30 @@ button {
   gap: 8px;
 }
 .panel__img {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 7px;
   cursor: pointer;
-  transition: all .4s;
+  transition: all .2s;
 }
 .panel__img:hover {
   transform: scale(1.05);
 }
 .panel__button {
-  width: 160px;
-  height: 160px;
-  background-color: #343f45;
+  width: 140px;
+  height: 140px;
+  background-color: #333e44;
   border-radius: 10px;
   cursor: pointer;
-  transition: all .4s;
+  transition: all .2s;
 }
 .panel__button:hover, 
 .panel__button:focus {
-  background-color: #3d484d;
+  background-color: #404c52;
 }
-.panel__icon {
-  color: #161e21;
+.panel__upload-icon {
+  color: #21292d;
   font-size: 25px;
 }
 
