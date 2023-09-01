@@ -215,8 +215,10 @@ button {
 }
 
 .main {
+  /* viewport_height - header_height */
+  height: calc(100vh - 55px);
   flex: 1;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, .07);
 }
 
 .main__header {
@@ -224,7 +226,8 @@ button {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 8px 30px;
+  padding: 0px 30px;
+  height: 46px;
 }
 .main__nav {
   
@@ -262,4 +265,94 @@ button {
 .breadcrumb__link:hover, 
 .breadcrumb__link:focus {
   text-decoration: underline;
+}
+
+.editor {
+  /* viewport_height - header_height - main_header_hight */
+  height: calc(100vh - 55px - 46px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 9px;
+  margin-top: -10px;
+}
+.canvas {
+  height: 45vh;
+  width: 41vw;
+  position: relative;
+  border: 1px solid #c7cacd;
+  border-radius: 5px;
+}
+.canvas__bg-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: .15;
+  border-radius: inherit;
+}
+.canvas__fg-img {
+  height: 78%;
+  width: 76%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: inherit;
+  border: 1px solid #fff;
+  cursor: grab;
+}
+.canvas__circle {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.canvas__circle:nth-of-type(1) {
+  top: 10%;
+  left: 11.4%;
+  cursor: nw-resize;
+}
+.canvas__circle:nth-of-type(2) {
+  top: 10%;
+  left: 86.7%;
+  cursor: ne-resize;
+}
+.canvas__circle:nth-of-type(3) {
+  bottom: 10%;
+  left: 86.7%;
+  cursor: se-resize;
+}
+.canvas__circle:nth-of-type(4) {
+  bottom: 10%;
+  left: 11.4%;
+  cursor: sw-resize;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  height: 45vh;
+}
+.tool__btn {
+  font-size: 10px;
+  color: #243137;
+  background-color: #dbdcdd; 
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tool__btn:last-child {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+.tool__btn:hover, 
+.tool__btn:focus {
+  background-color: #c2c5c9;
+}
+.tool__btn--active {
+  color: #fff;
+  background-color: #10171A;
 }
