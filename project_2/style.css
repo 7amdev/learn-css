@@ -388,3 +388,41 @@ a {
 .gallery__number {
   font-weight: 600;
 }
+
+/* Features */
+.features {
+  display: flex;
+  background-color: #eaf1ec;
+  margin-top: auto;
+  padding: 40px 0 10px 0;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.feature__icon-wrapper {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.feature__icon {
+  font-size: 19px;
+  color: #30b476;
+}
+.feature__title {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.feature__description {
+  font-size: 13px;
+  text-align: center;
+}
