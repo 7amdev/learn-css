@@ -12,24 +12,45 @@
 
   <title>Photo Sharing</title>
 </head>
-<body>
+<body class="app">
   <header class="header">
-    <img class="logo" src="https://bytegrad.com/course-assets/css/2/logo.svg" alt="Logo">
-    <section class="search">
-      <input type="text" class="search__input">
-      <button class="search__btn">
-        <i class="fas fa-search"></i>
+    <div class="header__container max-w-default margin-auto">
+      <img class="logo" src="https://bytegrad.com/course-assets/css/2/logo.svg" alt="Logo">
+      <form action="#" class="search">
+        <input type="text" class="search__input" placeholder="Search photos">
+        <button type="submit" class="search__btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">
+              <i class="fas fa-compass nav__icon"></i>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">
+              <i class="fas fa-fire-alt nav__icon"></i>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">
+              <i class="fas fa-user nav__icon"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <button class="header__btn header__discover">
+        <i class="fas fa-compass"></i>
       </button>
-    </section>
-    <button class="header__btn">
-      <i class="fas fa-compass"></i>
-    </button>
-    <button class="header__btn">
-      <i class="fas fa-fire-alt"></i>
-    </button>
-    <button class="header__btn">
-      <i class="fas fa-user"></i>
-    </button>
+      <button class="header__btn">
+        <i class="fas fa-fire-alt"></i>
+      </button>
+      <button class="header__btn">
+        <i class="fas fa-user"></i>
+      </button> -->
+    </div>
   </header>
 </body>
 </html>
