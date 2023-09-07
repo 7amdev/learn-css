@@ -137,3 +137,156 @@ a {
 .margin-auto {
   margin: 0 auto;
 }
+
+/* Sidebar */
+.sidebar {
+  width: 350px;
+  color: #fff;
+  background-color: #1b2e22;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  border-bottom: 1px solid #2a4434;
+}
+.info__title {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1;
+}
+.info__title--accent {
+  color: #37cd87;
+  font-weight: 700;
+  font-style: italic;
+}
+.info__text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.info__body--accent {
+  color: #37cd87;
+  font-weight: 200;
+  text-decoration: underline;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.social__images {
+
+}
+.social__img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.social__img:not(.social__img:first-of-type) {
+  margin-left: -13px;
+}
+.social__info {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+.social__count-members {
+  font-weight: 500;
+  line-height: 10px;
+}
+.social__count-detail {
+  font-size: 12px;
+  color: #a0a5a0;
+}
+.cta {
+  text-align: center;
+}
+.cta__btn {
+  display: block;
+  width: 100%;
+  background-color: #2eb073;
+  border-radius: 3px;
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.cta__icon {
+  font-size: 10px;
+  vertical-align: middle;
+}
+.cta__signin {
+  font-size: 12px;
+  color: #a0a5a0;
+}
+.cta__link {
+  color: #37cd87;
+  font-weight: 600;
+  text-decoration: none;
+}
+.panel__link:hover, 
+.panel__link:focus {
+  text-decoration: underline;
+} 
+
+/*  [Link] 
+    https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/ 
+*/
+.upload {
+  border-bottom: 1px solid #2a4434; 
+  height: 435px;
+}
+.upload__area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  line-height: 16px;
+  border: 2px dashed #34523f;
+  border-radius: 4px;
+  text-align: center;
+  height: 100%;
+  background-color: #233529;
+  
+}
+.upload__icon {
+  font-size: 17px;
+  color: #a0a5a0;  
+  margin-bottom: 5px;
+}
+.upload__info {
+  font-size: 12px;
+  font-weight: 400;
+}
+.upload__info--mute {
+  color: #a0a5a0;
+  font-weight: 400;
+}
+.upload__link {
+  color: #30b476;
+  text-decoration: underline;
+}
+.upload__file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.footer {
+  margin-top: auto;
+  font-size: 10px;
+  color: #a0a5a0;
+}
