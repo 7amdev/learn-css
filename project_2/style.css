@@ -220,6 +220,10 @@ a {
   text-transform: uppercase;
   cursor: pointer;
 }
+.cta__btn:hover, 
+.cta__btn:focus {
+  background-color: #23a066;
+}
 .cta__icon {
   font-size: 10px;
   vertical-align: middle;
@@ -244,20 +248,23 @@ a {
 .upload {
   border-bottom: 1px solid #2a4434; 
   height: 435px;
-}
+} 
 .upload__area {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
   font-size: 13px;
   line-height: 16px;
-  border: 2px dashed #34523f;
   border-radius: 4px;
   text-align: center;
   height: 100%;
-  background-color: #233529;
-  
+  background-color: #233529;  
+  border: 2px dashed #34523f;
+}
+.upload__area:hover {
+  background-color: #283b2e;  
 }
 .upload__icon {
   font-size: 17px;
