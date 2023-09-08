@@ -143,7 +143,6 @@ a {
   width: 350px;
   color: #fff;
   background-color: #1b2e22;
-  height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
 }
@@ -302,7 +301,6 @@ a {
 
 /** Main */
 .main {
-  height: calc(100vh - 50px);
   flex: 1;
  
   display: flex;
@@ -311,6 +309,7 @@ a {
 
 /* Gallery */ 
 .gallery {
+  flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 192px 50px 115px 16px 51px 15px 197px;
@@ -391,6 +390,7 @@ a {
 
 /* Features */
 .features {
+  flex: 1;
   display: flex;
   background-color: #eaf1ec;
   margin-top: auto;
